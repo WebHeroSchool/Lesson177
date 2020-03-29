@@ -1,0 +1,52 @@
+﻿.menu {
+    text-align: left;
+}
+
+.menu__links-item {
+    display: inline-block;
+    color: red;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.menu__icon {
+    display: none;
+    width: 45px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__icon span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 50%;
+    background: red;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    }
+
+.menu__icon span:nth-child(1) {
+    top: 0px;
+}
+
+.menu__icon span:nth-child(2) {
+    top: 26px;
+}
+
+@media screen and (max-width: 375px) {
+  .menu__icon{
+    display: block;
+     }
+
+  @media screen and (max-width: 9999px) {
+  .menu__links {
+    display: none;
+     }   
+
+  
